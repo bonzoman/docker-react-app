@@ -15,7 +15,7 @@ CMD [ "npm", "run", "build" ]
 
 
 
+##RUN##
 FROM nginx
-# Port 매핑
 EXPOSE 80
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
