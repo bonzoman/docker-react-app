@@ -22,11 +22,10 @@ deploy:
   bucket_path: "Docker-React-App"
   on:
     branch: master
-
-# app.travis-ci.com > More options > Settings에서 등록한 AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY를 등록
-# (실제키는 aws > IAM에서 생성했고, 생성한 키값을 travis-ci.com에 등록해놓음)
-access_key_id: $AWS_ACCESS_KEY
-secret_access_key: $AWS_SECRET_ACCESS_KEY
+  # app.travis-ci.com > More options > Settings에서 등록한 AWS_ACCESS_KEY, AWS_SECRET_ACCESS_KEY를 등록
+  # (실제키는 aws > IAM에서 생성했고, 생성한 키값을 travis-ci.com에 등록해놓음)
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   
 
 
