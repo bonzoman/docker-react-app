@@ -1,7 +1,7 @@
 #베이스 이미지를 명시한다.
 FROM node:alpine
 
-WORKDIR /app 
+WORKDIR /usr/src/app 
 
 COPY package.json ./
 

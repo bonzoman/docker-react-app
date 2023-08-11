@@ -1,7 +1,7 @@
 #베이스 이미지를 명시한다.
 FROM node:alpine as builder
 
-WORKDIR /app 
+WORKDIR /usr/src/app 
 
 COPY package.json ./
 
@@ -17,4 +17,4 @@ CMD [ "npm", "run", "build" ]
 
 FROM nginx
 EXPOSE 80
-COPY --from=builder /app/build /usr/share/nginx/html
+COPY --from=builder /usr/src/app/build /usr/share/nginx/html
